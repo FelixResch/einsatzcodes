@@ -1,0 +1,22 @@
+{
+  "name": "einsatzcodes",
+  "description": "",
+  "main": "",
+  "authors": [
+    "felix <resch.felix@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}

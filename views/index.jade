@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1="Einsatzcode Suche"
+  div.input-code
+    input#major(type="number",minlength=2,maxlength=2)
+    input#priority(type="text",maxlength=1,minlength=1)
+    input#minor(type="number",minlength=2,maxlength=2)
+    input#suffix(type="text",minlength=1,maxlength=1)
+  a#lookup.btn
+    i.fa.fa-search
+    |  Suche
+  .result.empty
+    p#code
+    p#result

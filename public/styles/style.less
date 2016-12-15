@@ -1,0 +1,61 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 640px;
+
+    h1 {
+      text-align: center;
+    }
+
+    a.btn {
+      cursor: pointer;
+      width: 95%;
+      padding: 10px;
+      text-align: center;
+      background-color: #00B7FF;
+      color: white;
+      display: block;
+      .center;
+      margin-top: 15px;
+    }
+
+    .input-code {
+      display: flex;
+      justify-content: space-around;
+      input {
+        width: 20%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+      }
+    }
+
+    .result:not(.empty) {
+      display: block;
+      background-color: red;
+      color: white;
+      text-align: center;
+      width: 95%;
+      .center;
+      margin-top: 15px;
+      padding: 10px;
+      #code {
+        font-weight: bolder;
+        font-size: x-large;
+      }
+      #result {
+        font-weight: bold;
+        font-size: large;
+      }
+    }
+    .result.empty {
+      display: none;
+    }
+  }
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
