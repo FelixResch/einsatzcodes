@@ -25,6 +25,7 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 if(process.env.OPENSHIFT_NODEJS_IP) {
+    console.log("Listening on ", process.env.OPENSHIFT_NODEJS_IP, port);
     server.listen(process.env.OPENSHIFT_NODEJS_IP, port);
 } else {
     server.listen(port);
