@@ -17,6 +17,16 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+if(process.env.NODE_ENV == 'production') {
+    app.use((req, res, next) => {
+        if(req.headers["x-forwarded-proto"] == 'http') {
+            res.redirect('https://' + req.headers.host + req.path);
+        } else {
+            next();
+        }
+    });
+}
+
 app.use(function (req, res, next) {
     req.db = data;
     next()
